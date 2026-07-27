@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio de Desarrollador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">Adri<span>_dev</span>/</div>
+    <div class="status">disponible para trabajar</div>
+  </div>
+  <nav class="file-tree">
+    <div class="tree-label">portafolio/</div>
+    <a class="nav-link" href="index.html"><span class="dot">●</span> Bienvenida</a>
+    <a class="nav-link" href="sobre-mi.html"><span class="dot">●</span> Sobre mi</a>
+    <a class="nav-link" href="habilidades.html"><span class="dot">●</span> Habilidades</a>
+    <a class="nav-link" href="experiencia.html"><span class="dot">●</span> Experiencia</a>
+    <a class="nav-link" href="proyectos.html"><span class="dot">●</span> Proyectos</a>
+    <a class="nav-link" href="contacto.html"><span class="dot">●</span> Contacto</a>
+  </nav>
+  <div class="sidebar-footer">© 2026 — Hecho por Wilson del Cid</div>
+</aside>
+
+<div class="main">
+  <section id="hero-section">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span>
+        <span class="tname">Bienvenido</span>
+      </div>
+      <div class="terminal-body">
+        <div class="line-pre"><span class="arrow">➜</span> ~ Bienvenida</div>
+        <h1 class="hero-name">Hola, soy <span class="accent">Wilson del Cid</span></h1>
+        <div class="typewriter"><span id="typedText"></span><span class="cursor"></span></div>
+
+        <div class="hero-cta">
+          <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+          <a href="contacto.html" class="btn btn-ghost">Contactar</a>
+        </div>
+
+        <div class="hero-preview">
+          <a href="sobre-mi.html" class="preview-card">
+            <span class="pc-tag">01</span>
+            <div class="pc-title">Sobre mí</div>
+            <div class="pc-desc">Quién soy y qué busco</div>
+          </a>
+          <a href="habilidades.html" class="preview-card">
+            <span class="pc-tag">02</span>
+            <div class="pc-title">Habilidades</div>
+            <div class="pc-desc">Tecnologías que domino</div>
+          </a>
+          <a href="proyectos.html" class="preview-card">
+            <span class="pc-tag">03</span>
+            <div class="pc-title">Proyectos</div>
+            <div class="pc-desc">Cosas que he construido</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Fundación Kinal — Wilson del Cid · Portafolio de desarrollador</footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">Adri<span>_dev</span>/</div>
+    <div class="status">disponible para trabajar</div>
+  </div>
+  <nav class="file-tree">
+    <div class="tree-label">portafolio/</div>
+    <a class="nav-link" href="index.html"><span class="dot">●</span> Bienvenida</a>
+    <a class="nav-link" href="sobre-mi.html"><span class="dot">●</span> Sobre mí</a>
+    <a class="nav-link" href="habilidades.html"><span class="dot">●</span> Habilidades</a>
+    <a class="nav-link" href="experiencia.html"><span class="dot">●</span> Experiencia</a>
+    <a class="nav-link" href="proyectos.html"><span class="dot">●</span> Proyectos</a>
+    <a class="nav-link" href="contacto.html"><span class="dot">●</span> Contacto</a>
+  </nav>
+  <div class="sidebar-footer">© 2026 — Wilson del Cid</div>
+</aside>
+
+<div class="main">
+  <div class="page">
+    <div class="page-header">
+      <div class="breadcrumb">portafolio <span class="sep">/</span> <span class="current">Contacto</span></div>
+      <span class="section-tag">05 · contacto</span>
+      <h1>Hablemos</h1>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <p>¿Tienes una oportunidad, un proyecto o una pregunta? Escríbeme por el formulario o encuéntrame en estas plataformas.</p>
+        <div class="social-list">
+          <a href="https://www.linkedin.com/in/wilson-adrián-del-cid-pasan-03064a425" target="_blank">→ LinkedIn</a>
+          <a href="https://github.com/wdelcid-2024243" target="_blank">→ GitHub</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm"
+            action="https://formsubmit.co/ajax/wilsondelcid2008@gmail.com" method="POST">
+
+        <!-- Campo oculto anti-spam (no lo borres) -->
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="¿En qué te puedo ayudar?">
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Enviar mensaje</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+
+    <div class="page-nav">
+      <a href="proyectos.html">← Proyectos</a>
+      <a class="next" href="index.html">Volver al inicio →</a>
+    </div>
+  </div>
+
+  <footer>Fundación Kinal — Wilson del Cid · Portafolio de desarrollador</footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

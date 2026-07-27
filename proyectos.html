@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">Adri<span>_dev</span>/</div>
+    <div class="status">disponible para trabajar</div>
+  </div>
+  <nav class="file-tree">
+    <div class="tree-label">portafolio/</div>
+    <a class="nav-link" href="index.html"><span class="dot">●</span> Bienvenida</a>
+    <a class="nav-link" href="sobre-mi.html"><span class="dot">●</span> Sobre mí</a>
+    <a class="nav-link" href="habilidades.html"><span class="dot">●</span> Habilidades</a>
+    <a class="nav-link" href="experiencia.html"><span class="dot">●</span> Experiencia</a>
+    <a class="nav-link" href="proyectos.html"><span class="dot">●</span> Proyectos</a>
+    <a class="nav-link" href="contacto.html"><span class="dot">●</span> Contacto</a>
+  </nav>
+  <div class="sidebar-footer">© 2026 — Wilson del Cid</div>
+</aside>
+
+<div class="main">
+  <div class="page">
+    <div class="page-header">
+      <div class="breadcrumb">portafolio <span class="sep">/</span> <span class="current">Proyectos</span></div>
+      <span class="section-tag">04 · proyectos</span>
+      <h1>Portafolio de aplicaciones</h1>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="node">Node.js</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="sql">MySQL</button>
+      <button class="filter-btn" data-filter="mon">MongoDB</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-tags="java sql">
+        <div class="project-thumb">
+          <img src="images/proyectos/Veterinaria.jpg" alt="Captura del proyecto 1" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-title">Sistema de Gestión Veterinaria</div>
+          <p class="project-desc">Desarrollo de un sistema integral para la gestión de pacientes veterinarios, citas y registros médicos.</p>
+          <div class="tag-row"><span class="tag">Java</span><span class="tag">MySQL</span></div>
+          <div class="project-links">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="java">
+        <div class="project-thumb">
+          <img src="images/proyectos/Calculadora.png" alt="Captura del proyecto 2" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-title">Calculadora</div>
+          <p class="project-desc">Desarrollo de una calculadora básica con funcionalidades de suma, resta, multiplicación y división.</p>
+          <div class="tag-row"><span class="tag">Java</span></div>
+          <div class="project-links">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="node mon">
+        <div class="project-thumb">
+          <img src="images/proyectos/Restaurante.png" alt="Captura del proyecto 2" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-title">Sistema de Gestión de Restaurante</div>
+          <p class="project-desc">Desarrollo de un sistema para la gestión de pedidos, inventario y personal en un restaurante.</p>
+          <div class="tag-row"><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Programing-Team70/Restaurante.git" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="node mon">
+        <div class="project-thumb">
+          <img src="images/proyectos/KinalMedic.png" alt="Captura del proyecto 3" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-title">KinalMedic</div>
+          <p class="project-desc">Sistema de gestión médica para enfermeria de Kinal.</p>
+          <div class="tag-row"><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">MongoDB</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Programing-Team70/Kinal_Medic.git" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="experiencia.html">← Experiencia</a>
+      <a class="next" href="contacto.html">Contacto →</a>
+    </div>
+  </div>
+
+  <footer>Fundación Kinal — Wilson del Cid · Portafolio de desarrollador</footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
